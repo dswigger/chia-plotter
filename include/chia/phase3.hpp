@@ -559,7 +559,9 @@ void compute(	phase2::output_t& input, output_t& out,
 	out.num_written_7 = num_written_final_7;
 	out.final_pointer_7 = final_pointers[7];
 	
-	std::cout << "Phase 3 took " << (get_wall_time_micros() - total_begin) / 1e6 << " sec"
+	out.time_in_seconds=(get_wall_time_micros() - total_begin) / 1e6;
+
+	std::cout << "Phase 3 took " << out.time_in_seconds << " sec"
 			", wrote " << num_written_final << " entries to final plot" << std::endl;
 }
 

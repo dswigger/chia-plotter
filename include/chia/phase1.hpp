@@ -503,8 +503,10 @@ void compute(	const input_t& input, output_t& out,
 	out.table[4] = tmp_5.get_info();
 	out.table[5] = tmp_6.get_info();
 	out.table[6] = tmp_7.get_info();
+
+	out.time_in_seconds=(get_wall_time_micros() - total_begin) / 1e6;
 	
-	std::cout << "Phase 1 took " << (get_wall_time_micros() - total_begin) / 1e6 << " sec" << std::endl;
+	std::cout << "Phase 1 took " << out.time_in_seconds << " sec" << std::endl;
 }
 
 

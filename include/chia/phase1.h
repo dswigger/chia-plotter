@@ -209,6 +209,7 @@ typedef DiskSort<entry_6, get_y<entry_6>> DiskSort6;
 typedef DiskSort<entry_7, get_y<entry_7>> DiskSort7;
 
 struct output_t {
+	float time_in_seconds;	
 	input_t params;
 	std::array<table_t, 7> table;
 };

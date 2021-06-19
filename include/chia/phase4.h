@@ -14,6 +14,11 @@
 namespace phase4 {
 
 struct output_t {
+	float phase1_time_in_seconds;
+	float phase2_time_in_seconds;
+	float phase3_time_in_seconds;
+	float phase4_time_in_seconds;
+	float total_plot_time_seconds;
 	phase1::input_t params;
 	uint64_t plot_size = 0;
 	std::string plot_file_name;

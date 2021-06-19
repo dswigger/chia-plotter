@@ -166,8 +166,8 @@ void compute(	const phase1::output_t& input, output_t& out,
 	out.table_1 = input.table[0];
 	out.table_7 = table_7.get_info();
 	out.bitfield_1 = next_bitfield;
-	
-	std::cout << "Phase 2 took " << (get_wall_time_micros() - total_begin) / 1e6 << " sec" << std::endl;
+	out.time_in_seconds=(get_wall_time_micros() - total_begin) / 1e6;
+	std::cout << "Phase 2 took " << out.time_in_seconds << " sec" << std::endl;
 }
 
 

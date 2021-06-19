@@ -75,6 +75,7 @@ typedef DiskSort<entry_x, get_pos<entry_x>> DiskSortT;
 typedef DiskSort<entry_7, get_pos<entry_7>> DiskSort7;		// dummy
 
 struct output_t {
+	float time_in_seconds;
 	phase1::input_t params;
 	table_t table_1;
 	table_t table_7;

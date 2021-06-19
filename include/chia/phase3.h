@@ -93,6 +93,7 @@ typedef DiskSort<entry_lp, get_line_point<entry_lp>> DiskSortLP;
 typedef DiskSort<entry_np, get_sort_key<entry_np>> DiskSortNP;
 
 struct output_t {
+	float time_in_seconds;
 	int header_size = 0;
 	uint64_t num_written_7 = 0;
 	uint64_t final_pointer_7 = 0;

@@ -264,8 +264,10 @@ void compute(	const phase3::output_t& input, output_t& out,
 	out.plot_file_name = tmp_dir + plot_name + ".plot";
 	
 	std::rename(input.plot_file_name.c_str(), out.plot_file_name.c_str());
+
+	out.phase4_time_in_seconds=(get_wall_time_micros() - total_begin) / 1e6;
 	
-	std::cout << "Phase 4 took " << (get_wall_time_micros() - total_begin) / 1e6 << " sec"
+	std::cout << "Phase 4 took " << out.phase4_time_in_seconds << " sec"
 			", final plot size is " << out.plot_size << " bytes" << std::endl;
 }
 
